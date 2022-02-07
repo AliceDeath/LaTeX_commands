@@ -1,9 +1,0 @@
-\usepackage{amsmath, amssymb, amsthm, mathrsfs, xcolor, hyperref, ctex}
-
-%宏包的调用
-
-\title{}
-\author{Alice}
-\date{\today}
-
-%文章名字(此处待补充!!!),作者,日期  (此处待调整 优化Q...Q)
