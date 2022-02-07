@@ -1,0 +1,16 @@
+%计数器的调整
+\renewcommand{\labelenumi}{(\theenumi)}%\item命令变成类似:(8)这样的效果
+
+%习惯的标记命令(不是环境命令!!!! 不要忘记换行!!!)
+\newcommand{\rmk}[1]{{\color{red}{Remark:{#1}}}}%注记,红色
+\newcommand{\hint}[1]{{\color{lightgray}{Hint:{#1}}}}%淡灰色提示
+\newcommand{\jh}[1]{{\color{gray}{记号说明:$\quad${#1}}}}%灰色的记号说明
+
+%环境(这块需要大改)
+\newcounter{probname}[section]
+\setcounter{probname}{0}
+\newenvironment{prob}{\\\par\stepcounter{probname}{\color{green}{{\heiti 问题}\arabic{section}.\arabic{probname}}} \quad }{\par}%问题环境,模仿朱富海老师,颜色待修改
+
+\newenvironment{dingyi}{\\\par\stepcounter{probname}{\color{green}{{\heiti 定义}\arabic{section}.\arabic{probname}}} \quad }{\par}%计数同问题环境!!!待大修
+
+ %证明环境不妨使用原生的proof
